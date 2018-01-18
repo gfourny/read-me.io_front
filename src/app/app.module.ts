@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { BarreFooterComponent } from './barre-footer/barre-footer.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BarreFooterComponent
   ],
   imports: [
     BrowserModule
