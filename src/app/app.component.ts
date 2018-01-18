@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  values = '';
+
+  onKey(event: any) {
+    this.values += event.target.value + ' | ';
+    console.log(this.values);
+  }
 }
