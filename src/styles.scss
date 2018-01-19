@@ -2,6 +2,10 @@
 
 @import '@angular/material/prebuilt-themes/pink-bluegrey.css';
 
+$primaryColor : #0091EA;
+$primaryFontColor : white;
+$backgroundColor : #2d2d30;
+
 body {
-    background: #2d2d30;
+    background: $backgroundColor;
 }
