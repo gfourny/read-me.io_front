@@ -5,15 +5,24 @@
   </h1>
   <img width="300" alt="Readme.io logo" src="assets/img/logo-readme.png">
   
-<form class="example-form">
+<form class="example-form"  ng-controller="myCtrl">
   <mat-form-field class="example-full-width">
-    <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+    <input type="text" placeholder="Pick one template" aria-label="Number" matInput [formControl]="templateControl" [matAutocomplete]="auto">
     <mat-autocomplete #auto="matAutocomplete">
       <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
         {{ option }}
       </mat-option>
     </mat-autocomplete>
   </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Pick extension">
+      <mat-option *ngFor="let extension of extensions" [value]="extension.value">
+        {{ extension.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
   <button mat-button>Submit</button>
 </form>
 

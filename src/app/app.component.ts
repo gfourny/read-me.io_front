@@ -13,18 +13,24 @@ import {map} from 'rxjs/operators/map';
 })
 export class AppComponent {
 
-  myControl: FormControl = new FormControl();
+  templateControl: FormControl = new FormControl();
+  
+  templates = [
+    'Java',
+    'Javascript',
+    'C#'
+  ];
 
-  options = [
-    'One',
-    'Two',
-    'Three'
+  extensions = [
+    {value: 'txt', viewValue: '.txt'},
+    {value: 'asciii-doc', viewValue: '.ascii-doc'},
+    {value: 'markdown', viewValue: '.md'}
   ];
 
   filteredOptions: Observable<string[]>;
 
   ngOnInit() {
-    this.filteredOptions = this.myControl.valueChanges
+    this.filteredOptions = this.templateControl.valueChanges
       .pipe(
         startWith(''),
         map(val => this.filter(val))
@@ -32,7 +38,7 @@ export class AppComponent {
   }
 
   filter(val: string): string[] {
-    return this.options.filter(option =>
+    return this.templates.filter(option =>
       option.toLowerCase().indexOf(val.toLowerCase()) === 0);
   }
 }
