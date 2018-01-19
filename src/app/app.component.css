@@ -1,7 +1,5 @@
-md-card {
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #ccc;
-  }
+.title {
+    font-family: source-sans-pro;
+    color: white;
+    letter-spacing: 3px;
+}
