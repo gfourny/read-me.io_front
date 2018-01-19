@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { environment} from "../../environments/environment";
 @Component({
   selector: 'app-barre-footer',
   templateUrl: './barre-footer.component.html',
@@ -12,6 +12,6 @@ export class BarreFooterComponent implements OnInit {
   ngOnInit() {
   }
 
-  pjson = require('../../../package.json');
+  pjson = environment.version
 }
 
