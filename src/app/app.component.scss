@@ -1,7 +1,20 @@
 @import '../styles';
 
 .title {
-    font-family: source-sans-pro;
-    color: white;
+    font-family: $fontFamily;
+    color: $primaryFontColor;
     letter-spacing: 3px;
+    font-size: 4em;
+    margin-top: 0;
+}
+
+.container{
+    height: 90vh;
+}
+
+app-barre-footer{
+    color: $primaryFontColor;
+    height: 10vh;
+    text-align: center;
+    font-family: $fontFamily;
 }

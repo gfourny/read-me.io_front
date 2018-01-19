@@ -5,7 +5,42 @@
 $primaryColor : #0091EA;
 $primaryFontColor : white;
 $backgroundColor : #2d2d30;
+$fontFamily: source-sans-pro;
+$fontSize: 30px;
 
 body {
     background: $backgroundColor;
+}
+
+.mat-form-field-ripple {
+    background-color: $primaryColor;
+}
+
+.mat-input-element{
+    caret-color: $primaryColor;
+}
+
+.mat-focused .mat-form-field-label{
+    color: $primaryColor;
+}
+
+.mat-button{
+    background-color: $primaryColor;
+    color: $primaryFontColor;
+}
+
+.mat-option-text{
+    font-family: $fontFamily;
+}
+
+.mat-form-field{
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    width: 400px;
+}
+
+.mat-button{
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    padding: 12px 16px;
 }
