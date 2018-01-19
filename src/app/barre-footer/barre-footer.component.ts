@@ -3,7 +3,7 @@ import { environment} from "../../environments/environment";
 @Component({
   selector: 'app-barre-footer',
   templateUrl: './barre-footer.component.html',
-  styleUrls: ['./barre-footer.component.css']
+  styleUrls: ['./barre-footer.component.scss']
 })
 export class BarreFooterComponent implements OnInit {
 
