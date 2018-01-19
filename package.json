@@ -1,6 +1,6 @@
 {
   "name": "readme-io",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -14,11 +14,15 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "5.1.0",
+    "@angular-devkit/core": "0.0.28",
+    "@angular/animation": "4.0.0-beta.8",
+    "@angular/cdk": "github:angular/cdk-builds",
     "@angular/common": "5.1.0",
     "@angular/compiler": "5.1.0",
     "@angular/core": "5.1.0",
     "@angular/forms": "5.1.0",
     "@angular/http": "5.1.0",
+    "@angular/material": "github:angular/material2-builds",
     "@angular/platform-browser": "5.1.0",
     "@angular/platform-browser-dynamic": "5.1.0",
     "@angular/router": "5.1.0",
