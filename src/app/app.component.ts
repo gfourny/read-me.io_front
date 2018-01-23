@@ -35,6 +35,10 @@ export class AppComponent {
     'Three'
   ];
 
+  submitButton(event: any){
+    console.log(event);
+  }
+
   filteredOptions: Observable<string[]>;
 
   ngOnInit() {
