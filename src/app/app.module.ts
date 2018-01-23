@@ -8,7 +8,7 @@ import { MatFormFieldModule } from '@angular/material';
 import { MatInputModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReadMe } from "./services/readMe.service";
+import { ReadMe } from './services/readMe.service';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -19,12 +19,12 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    FormsModule, 
+    FormsModule,
     ReactiveFormsModule,
     MatAutocompleteModule,
     MatFormFieldModule,
     MatInputModule,
-    BrowserAnimationsModule, 
+    BrowserAnimationsModule,
     MatButtonModule,
     HttpClientModule
   ],
