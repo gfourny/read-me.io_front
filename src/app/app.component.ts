@@ -44,8 +44,8 @@ export class AppComponent implements OnInit {
     );
   }
 
-  submitButton(event: any, extension: any) {
-    console.log(event);
+  submitButton(template: any, extension: any) {
+    console.log(template);
     console.log(extension);
   }
 
