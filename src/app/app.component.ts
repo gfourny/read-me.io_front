@@ -14,13 +14,21 @@ import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 })
 export class AppComponent implements OnInit {
 
-  versionAPI: string;
-  myControl: FormControl = new FormControl();
-  options = [
-    'One',
-    'Two',
-    'Three'
+  templateControl: FormControl = new FormControl();
+  
+  templates = [
+    'Java',
+    'Javascript',
+    'C#'
   ];
+
+  extensions = [
+    {value: 'txt', viewValue: '.txt'},
+    {value: 'asciii-doc', viewValue: '.ascii-doc'},
+    {value: 'markdown', viewValue: '.md'}
+  ]
+  versionAPI: string;
+  
   filteredOptions: Observable<string[]>;
 
   constructor(private readMe: ReadMe) {
@@ -40,7 +48,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.filteredOptions = this.myControl.valueChanges
+    this.filteredOptions = this.templateControl.valueChanges
       .pipe(
         startWith(''),
         map(val => this.filter(val))
@@ -48,7 +56,7 @@ export class AppComponent implements OnInit {
   }
 
   filter(val: string): string[] {
-    return this.options.filter(option =>
+    return this.templates.filter(option =>
       option.toLowerCase().indexOf(val.toLowerCase()) === 0);
   }
 }
